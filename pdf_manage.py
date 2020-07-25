@@ -53,7 +53,7 @@ class PdfManager():
         
         pdf_writer = PdfFileWriter()
 
-        for i in range(int(range_s), int(range_e) + 1):
+        for i in range(int(range_s)-1, int(range_e)):
             pdf_writer.addPage(pdf.getPage(i))
 
         
